@@ -207,7 +207,7 @@ func Generate(ctx context.Context, cfg *Config, opts ...Option) error {
 		for i, prompt := range prompts {
 			prompts[i] = fmt.Sprintf("%s%s%s", cfg.Prefix, prompt, cfg.Suffix)
 		}
-		sort.Strings(prompts)
+		// sort.Strings(prompts)
 	}
 
 	// Check total images
